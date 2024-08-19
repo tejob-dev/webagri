@@ -113,8 +113,8 @@ a:hover{
     2. COLOR PALETTE.
 ===================================== */
 :root {
-  --primary-color: #EEC344;
-  --secundary-color: #d07016;
+  --primary-color: #ffd658;
+  --secundary-color: #ffd658;
   --headline-color: #232323;
   --paragraph-color: #8B8B8B;
 }

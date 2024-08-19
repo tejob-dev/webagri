@@ -103,10 +103,10 @@ p.address {
 
 .top-header-right p.schedule::before {
     font-family: "Font Awesome 5 Free";
-    content: "\f017";
+    /* content: "\f017"; */
     margin-right: 10px;
     color: #FFF;
-}
+} 
 
 p.schedule {
     margin-right: 25px;
@@ -394,7 +394,7 @@ li.phone::before {
     4. ABOUT US.
 ======================================== */
 .about-banner-layer {
-    background-color: rgba(208, 112, 22, 0.8);
+    background-color: #ffd658;
     padding: 10px 10px 20px 10px;
     width: 300px;
     margin: auto;
@@ -1728,8 +1728,8 @@ h3.solution-title {
 
 .box-service {
     text-align: center;
-    padding: 40px 20px;
-    margin: 15px 0px;
+    padding: 15px 20px;
+    margin: 10px 0px;
     background-color: rgba(35, 35, 35, 0.8);
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
@@ -1737,6 +1737,7 @@ h3.solution-title {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
     border-radius: 5px;
+    height: 62vh;
 }
 
 .box-service:hover {
