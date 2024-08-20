@@ -63,8 +63,8 @@ p.address {
 .top-header-left p.address {
     margin-bottom: 0px;
     color: #FFF;
-    font-size: 13px;
-    padding: 15px 0px;
+    font-size: 11px;
+    padding: 6px 0px;
 }
 
 .top-header-left p.address::before {
@@ -97,8 +97,8 @@ p.address {
 
 .top-header-right p.schedule {
     color: #FFF;
-    font-size: 13px;
-    padding: 15px 0px;
+    font-size: 11px;
+    padding: 6px 0px;
 }
 
 .top-header-right p.schedule::before {

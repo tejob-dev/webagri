@@ -1,7 +1,7 @@
 .navbar {
   position: absolute;
   left: 0;
-  top: 55px;
+  top: 38px;
   padding: 0;
   width: 100%;
   z-index: 2;
@@ -9,8 +9,8 @@
 }
 
 .navbar .container {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .navbar .navbar-brand {
@@ -18,7 +18,7 @@
 }
 
 .navbar .navbar-brand img {
-  width: 100%;
+  width: 64%;
 }
 
 .navbar .navbar-toggler {
