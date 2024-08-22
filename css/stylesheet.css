@@ -1737,7 +1737,7 @@ h3.solution-title {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
     border-radius: 5px;
-    height: 47vh;
+    /* height: 47vh; */
 }
 
 .box-service:hover {
