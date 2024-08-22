@@ -394,7 +394,7 @@ li.phone::before {
     4. ABOUT US.
 ======================================== */
 .about-banner-layer {
-    background-color: #ffd658;
+    background-color: #b87d2a;
     padding: 10px 10px 20px 10px;
     width: 300px;
     margin: auto;
@@ -1646,7 +1646,7 @@ h3.solution-title {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, #EEC344, #000);
+    background-image: linear-gradient(to bottom right, #b87d2a, #000);
     opacity: 0.4;
 }
 
@@ -1737,13 +1737,13 @@ h3.solution-title {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
     border-radius: 5px;
-    height: 62vh;
+    height: 47vh;
 }
 
 .box-service:hover {
     text-align: center;
     padding: 40px 20px;
-    background-color: rgba(238, 195, 68);
+    background-color:(#b87d2a);
 }
 
 .box-service h4 {
