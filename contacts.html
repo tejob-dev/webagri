@@ -144,64 +144,133 @@
         <div class="pages-hero">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Contacts</h1>
-                    <p>Contacter Nous</p>
+                    <h1>A Propos De Nous</h1>
+                    <p>Notre Approche</p>
                 </div>
             </div>
         </div>
         <!--PAGES HERO END -->
     </header>
     <!-- content start  -->
-        <section>
-            <div class="container mt-5 mb-5">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="home-about-alt">
-                            <h5 class="subtitle">
-                                NOTRE APPROCHE
-                            </h5>
-                            <h2>Une approche intégrée et inclusive</h2>
-                            <p>A travers une approche intégrée et inclusive des ressources, nous amenons les communautés par la sensibilisation, la formation et le coaching à gérer durablement les ressources, les forêts et l’environnement.</p>
-                            <P>Nous agissons sur les pratiques, les approches et le contexte socio-économique pour améliorer la gestion des ressources naturelles et la protection des écosystèmes. Nous contribuons à la mise en place de chaînes de valeur efficaces, durables et inclusives, qui permettent d’augmenter les revenus et améliorer les conditions de vie des populations.</P>
-                            <P>Nous accompagnons les entreprises coopératives pour répondre de manière professionnelle et compétitive aux exigences des marchés. Nous faisons la promotion de l’agriculture durable pour assurer un accès aux ressources et aux marchés porteurs. Nous soutenons la gouvernance en développant des plans d’actions favorisant le renforcement du pouvoir des femmes rurales et la réduction des inégalités.
-                              <br>Nous optons pour une démarche participative et inclusive de toutes les parties prenantes.
-                              <br>Nous capitalisations nos approches sur le retour d’expériences acquises.
-                            </P>
-                            
-                        </div>
-                    </div>
-                    <div class="col-xl-6 spacing-lg">
-                        <figure class="home-about-alt-img">
-                        <figure class="home-about-alt-img">
-                            <img src="images/commons/agros-img-24.jpg" alt="" style="
-                            margin-left: auto;
-                            display: block;">
+    <section>
+        <div class="container mt-5 mb-5">
+            <div class="section-title">
+                <h2>RESTEZ EN CONTACT</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-col">
+                        <figure class="cc-icon">
+                            <img src="images/icons/phone.png" alt="...">
                         </figure>
+                        <h5><a href="tel:053-123-456-7890">(+225) 0709095378</a></h5>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <div class="service-wrapper ">
-            <div class="container">
-                <div class="section-title">
-                    <figure class="grid-service-icon" style="
-                    position: relative;
-                ">
-                        <img src="images/icons/wheat.png" alt="">
-                    </figure>
-                    <h2>Obtenez un service Agricole professionnel et innovant</h2>
-                    <div class="service-btn d-flex justify-content-center" style="
-                    position: relative;
-                ">
-                        <a href="services-detail-agriculture.html" class="btn-default btn-outline btn-lg">Lire Plus</a>
+                <div class="col-lg-4">
+                    <div class="contact-col">
+                        <figure class="cc-icon">
+                            <img src="images/icons/email.png" alt="...">
+                        </figure>
+                        <h5><a href="mailto:infos@jmkconsulting-ci.com">infos@jmkconsulting-ci.com</a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-col">
+                        <figure class="cc-icon">
+                            <img src="images/icons/clock.png" alt="...">
+                        </figure>
+                        <h5>Abidjan - Cocody Angré 8eme Tranche (Carrefour prière)</h5>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- content end -->
 
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-left">
+                        <h3>Contactez-nous</h3>
+                        <p>Notre équipe est heureuse de répondre à vos questions. Remplissez le formulaire et nous vous contacterons dès que possible.</p>
+                        <div class="contact-info">
+                            <div class="media">
+                                <div class="media-rectangle">
+                                    <img src="images/icons/phone.png" class="mr-3" alt="...">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Service de protection des cultures</a></h5>
+                                    <p>Nous avons choisi de constituer une équipe expérimentée de passionnés ayant une motivation naturelle à faire pour le mieux dans le strict intérêt des entreprises clientes.</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-rectangle">
+                                    <img src="images/icons/email.png" class="mr-3" alt="...">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0"><a href="mailto:info@agros.com">info@agros.com</a></h5>
+                                <p>Drop us an email and we will get back to you</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 spacing-md">
+                    <form id="contact-form" method="post" action="contact.php">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control custom-form"
+                                            placeholder="*Name" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email"
+                                            class="form-control custom-form" placeholder="*Email address"
+                                            required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input id="form_phone" type="tel" name="phone" class="form-control custom-form"
+                                            placeholder="*Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message"
+                                            class="form-control message-form custom-form" placeholder="*Your message"
+                                            rows="6" required="required"
+                                            data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-12 btn-send">
+                                    <p><input type="submit" class="btn btn-default" value="Send message"></p>
+                                </div>
+                                <div class="col-sm-12">
+                                    <p class="required">
+                                        * These fields are required.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- content end -->
+    
     <!-- FOOTER START -->
     <footer>
         <div class="container mt-5">
