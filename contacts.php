@@ -1,3 +1,53 @@
+<?php
+// Connexion à la base de données
+$host = 'localhost'; // Nom de l'hôte (souvent localhost)
+$dbname = 'jmk_bd'; // Nom de la base de données
+$username = 'root'; // Nom d'utilisateur
+$password = ''; // Mot de passe
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erreur de connexion à la base de données: " . $e->getMessage());
+}
+
+// Vérifier si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les valeurs du formulaire
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $phone = htmlspecialchars(trim($_POST['phone']));
+    $sujet = htmlspecialchars(trim($_POST['sujet']));
+    $message = htmlspecialchars(trim($_POST['message']));
+
+    // Valider les champs requis
+    if (!empty($name) && !empty($email) && !empty($sujet) && !empty($message)) {
+        // Préparer la requête SQL
+        $sql = "INSERT INTO contact (name, email, phone, sujet, message) VALUES (:name, :email, :phone, :sujet, :message)";
+        $stmt = $pdo->prepare($sql);
+
+        // Exécuter la requête avec les données du formulaire
+        try {
+            $stmt->execute([
+                ':name' => $name,
+                ':email' => $email,
+                ':phone' => $phone,
+                ':sujet' => $sujet,
+                ':message' => $message
+            ]);
+
+            echo "Merci, votre message a bien été envoyé.";
+        } catch (PDOException $e) {
+            echo "Erreur: " . $e->getMessage();
+        }
+    } else {
+        echo "Veuillez remplir tous les champs requis.";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr-FR" class="no-js">
 
@@ -215,7 +265,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 spacing-md">
-                    <form id="contact-form" method="post" action="contact.php">
+                    <form id="contact-form" method="post" action="contacts.php">
                         <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
@@ -309,7 +359,7 @@
                                 <li><a href="services.html">Gestiont d'entreprises</a></li>
                                 <li><a href="blog-grid.html">Etude et gestion de Projets </a></li>
                                 <li><a href="services.html">Agriculture Intelligente & innovante</a></li>
-                                <li><a href="contacts.html">Contact</a></li>
+                                <li><a href="contacts.php">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -361,7 +411,7 @@
                         <ul class="footer-terms">
                             <li><a href="about-us.html">A propos</a></li>
                             <li><a href="services.html">Négoce</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="contacts.php">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
